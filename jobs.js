@@ -1,18 +1,52 @@
 const jobs = [
   {
-    id: 1,
     title: "Frontend Developer",
-    company: "Techify Ltd.",
-    location: "Remote",
-    description: "Looking for a React developer with 2+ years experience.",
+    company: "TechSoft Ltd.",
+    location: "Lahore, Pakistan",
+    type: "Full-Time",
     link: "#"
   },
   {
-    id: 2,
+    title: "Backend Developer",
+    company: "CodeCraft",
+    location: "Remote",
+    type: "Part-Time",
+    link: "#"
+  },
+  {
     title: "Graphic Designer",
-    company: "Pixel Art",
-    location: "Lahore, Pakistan",
-    description: "Need a creative designer for social media campaigns.",
+    company: "Designify",
+    location: "Karachi, Pakistan",
+    type: "Internship",
+    link: "#"
+  },
+  {
+    title: "Digital Marketing Executive",
+    company: "MarketX",
+    location: "Islamabad, Pakistan",
+    type: "Full-Time",
     link: "#"
   }
 ];
+
+function renderJobs() {
+  const jobList = document.getElementById("job-list");
+  jobList.innerHTML = "";
+
+  jobs.forEach((job) => {
+    const jobItem = document.createElement("div");
+    jobItem.classList.add("job");
+
+    jobItem.innerHTML = `
+      <h3>${job.title}</h3>
+      <p><strong>Company:</strong> ${job.company}</p>
+      <p><strong>Location:</strong> ${job.location}</p>
+      <p><strong>Type:</strong> ${job.type}</p>
+      <a href="${job.link}" target="_blank">Apply Now</a>
+    `;
+
+    jobList.appendChild(jobItem);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", renderJobs);
