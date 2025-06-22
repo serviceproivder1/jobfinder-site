@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Company:</strong> ${job.company_name || "Ubisoft"}</p>
           <p><strong>Location:</strong> ${job.location || "N/A"}</p>
           <p><strong>Posted:</strong> ${job.date_posted || "N/A"}</p>
-          <a href="${job.url}" target="_blank">View Job</a>
+          <a href="${job.url}" target="_blank" class="apply-btn">Apply Now</a>
+
         `;
 
         jobList.appendChild(jobCard);
