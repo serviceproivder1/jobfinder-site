@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JobFinder - Latest Jobs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobFinder - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>JobFinder</h1>
+    <div class="logo">JobFinder</div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -18,19 +19,29 @@
   </header>
 
   <main>
-    <h2>Latest Jobs</h2>
-    <div id="jobs-container" class="grid"></div>
+    <section class="hero">
+      <h1>Find Your Dream Job</h1>
+      <p>We list the latest job openings to help you move forward in your career.</p>
+    </section>
+
+    <section class="jobs-section">
+      <h2>Latest Jobs</h2>
+      <div id="job-list" class="job-grid">
+        <!-- Jobs will be loaded here via jobs.js -->
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 JobFinder</p>
-    <div class="footer-links">
-      <a href="terms.html">Terms</a> | 
-      <a href="disclaimer.html">Disclaimer</a>
+    <p>&copy; 2025 JobFinder. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a>
     </div>
   </footer>
 
+  <!-- JS file -->
   <script src="jobs.js"></script>
-  <script src="main.js"></script>
 </body>
 </html>
