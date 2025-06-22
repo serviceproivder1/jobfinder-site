@@ -103,3 +103,46 @@ footer {
     padding: 1rem;
   }
 }
+/* Job Section Styling */
+.job-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #0077cc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.job-card h3 {
+  color: #0077cc;
+  margin-bottom: 8px;
+}
+
+.job-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #005fa3;
+}
+
